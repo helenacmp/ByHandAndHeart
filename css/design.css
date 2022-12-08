@@ -1,0 +1,123 @@
+/* * {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    height:100vh; 
+} */
+
+body {
+    background-color: white;
+}
+
+/* baggrundsvideo */
+/* #headerContent {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: top center;
+    justify-content: top center;
+} */
+/* video {
+    position: inherit;
+    min-width: 100%;
+    overflow: hidden;
+    z-index: -1;
+} */
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 80%;
+    background-color:rgb(53, 3, 53);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+/* Logo_header */
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+/* burger-menu */
+.burger {
+    display: none;   
+}
+/* Nav */
+.nav-bar ul {
+display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background: white;
+}
+
+.nav-bar ul li a.active {
+    color: black;
+    background: white;
+}
+
+@media only screen and (max-width: 1320px) {
+ header {
+   padding: 0 50px;
+ }
+}
+
+@media only screen and (max-width: 1100px) {
+    header {
+      padding: 0 30px;
+    }
+   }
+   @media only screen and (max-width: 900px) {
+    .burger {
+     display: block;
+     cursor: pointer;
+    }
+    .burger .line {
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vh;
+        background: black;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar ul {
+       display: block;
+       width: fit-content;
+       margin: 80px auto 0 auto;
+       text-align: center;
+       transition: 0.5s; 
+       opacity: 0;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+        color: black;
+    }
+   }
