@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
+@font-face {
+  font-family: "Aclonica";
+  src: url(fonte/Aclonica-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(fonte/Oswald.ttf);
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonte/OpenSans-Regular.ttf);
+}
+/* ––––––––––––––––––––––––––––––– forside navigationslinje og loop video ––––––––––––––––––––––––––––––– */
+/* navigationslinje og forside video */
+.hero {
+  width: 100%;
+  height: 100vh;
+  /* gennemsigtigt farveoverlay på video */
+  background-image: linear-gradient(rgba(222, 215, 201, 0.3), rgba(222, 215, 201, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  /* align-items: center; */
+  align-items: flex-end;
+  justify-content: center;
+}
+/* hele navigations linjen m. logo */
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ded7c9;
+}
+/* selve logoet */
+nav .logo {
+  /* angiver størrelsen */
+  width: 100px;
+}
+/* links i navigationslinjen */
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+/* styling af tekst i navigationslinjen */
+nav ul li a {
+  text-decoration: none;
+  color: #a69278;
+  font-size: 20px;
+  font-family: Oswald;
+}
+/* content - overskrift + link til keramik og kurser */
+.content {
+  text-align: center;
+  margin-bottom: 10%;
+}
+/* styling: overskrift */
+.content h1 {
+  font-size: 100px;
+  color: white;
+  transition: 0.5s;
+  font-family: Aclonica;
+}
+.content h1:hover {
+  -webkit-text-stroke: 0.2px white;
+  color: transparent;
+}
+/* styling: link til keramik og kurser */
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-family: Oswald;
+  background-color: #ded7c9;
+  padding: 14px 70px;
+  border-radius: 50px;
+  margin: 40px 40px 0 40px;
+  /* laver sknapperne 3D med en skygge */
+  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+}
+/* –––––––––––––––––––––––––––––––– Video i baggrunden –––––––––––––––––––––––––––––––– */
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
