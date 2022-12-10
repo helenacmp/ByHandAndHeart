@@ -16,6 +16,28 @@
   font-family: "OpenSans";
   src: url(fonte/OpenSans-Regular.ttf);
 }
+/* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
+h2 {
+  font-family: Oswald;
+  color: white;
+  font-size: 30px;
+}
+h3 {
+  font-family: Oswald;
+  color: white;
+  font-size: 20px;
+}
+h4 {
+  font-family: OpenSans;
+  color: white;
+  font-size: 16px;
+}
+p {
+  font-family: OpenSans;
+  color: white;
+  font-size: 16px;
+}
+
 /* ––––––––––––––––––––––––––––––––––––––––––– forside navigationslinje og loop video –––––––––––––––––––––––––––––––––––––––––– */
 /* navigationslinje og forside video */
 .hero {
@@ -135,8 +157,27 @@ nav .logo {
     height: 100%;
   }
 }
-/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Main ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+#section1 {
+  background-image: url();
+}
+#section2 {
+  background-image: url();
+}
+#section3 {
+  background-color: #ded7c9;
+}
+#section4 {
+  background-color: #c8ddd7;
+}
+
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background-color: #ded7c9;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
