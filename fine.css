@@ -4,9 +4,51 @@
     box-sizing: border-box;
     height:100vh; 
 } */
-
+/* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
+@font-face {
+  font-family: "Aclonica";
+  src: url(fonte/Aclonica-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(fonte/Oswald.ttf);
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonte/OpenSans-Regular.ttf);
+}
+/* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
+h1 {
+  font-family: "Aclonica";
+  color: black;
+  font-size: 40px;
+}
+h2 {
+  font-family: "Oswald";
+  color: black;
+  font-size: 30px;
+}
+h3 {
+  font-family: "Oswald";
+  color: black;
+  font-size: 20px;
+}
+h4 {
+  font-family: "OpenSans";
+  color: black;
+  font-size: 16px;
+}
+p {
+  font-family: "OpenSans";
+  color: black;
+  font-size: 16px;
+}
+/* ----- body --------- */
 body {
   background-color: white;
+  max-width: 100vw;
+  margin: 0;
+  padding: 0px;
 }
 
 /* baggrundsvideo */
@@ -137,10 +179,10 @@ header {
   }
   /*------om.html-------*/
   h1, h2 {
-    font-family: Aclonica;
+    font-family: "Aclonica";
   }
   p {
-   font-family: Gruppo; 
+   font-family: "Gruppo"; 
   }
   
 }

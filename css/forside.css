@@ -18,22 +18,22 @@
 }
 /* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
 h2 {
-  font-family: Oswald;
+  font-family: "Oswald";
   color: white;
   font-size: 30px;
 }
 h3 {
-  font-family: Oswald;
+  font-family: "Oswald";
   color: white;
   font-size: 20px;
 }
 h4 {
-  font-family: OpenSans;
+  font-family: "OpenSans";
   color: white;
   font-size: 16px;
 }
 p {
-  font-family: OpenSans;
+  font-family: "OpenSans";
   color: white;
   font-size: 16px;
 }
@@ -117,7 +117,7 @@ nav .logo {
   font-size: 100px;
   color: white;
   transition: 0.5s;
-  font-family: Aclonica;
+  font-family: "Aclonica";
 }
 .content h1:hover {
   -webkit-text-stroke: 0.2px white;
@@ -129,7 +129,7 @@ nav .logo {
   display: inline-block;
   color: white;
   font-size: 24px;
-  font-family: Oswald;
+  font-family: "Oswald";
   background-color: #ded7c9;
   padding: 14px 70px;
   border-radius: 50px;
