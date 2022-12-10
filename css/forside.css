@@ -106,15 +106,16 @@ nav .logo {
   background-color: #a69278;
 }
 /* –––––––––––––––––––––––––––––––––––––––Annimation af pil––––––––––––––––––––––––––––––––––––––– */
-@keyframes jump {
-  0%   {transform: translate3d(0,0%,0) scale3d(1,1,1);}
-  60%  {transform: translate3d(0,60%,0) scale3d(.7,1.5,1);}
-  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+@keyframes mover {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50px); }
 }
 
-.jump {
+img.mover {
   transform-origin: 50% 50%;
-  animation: jump .6s linear alternate infinite;
+  animation: mover 1s infinite  alternate;
+  position: absolute;
+  top: 90%;
  
 }
 /* –––––––––––––– content ––––––––––––––––––––– */
@@ -175,17 +176,22 @@ nav .logo {
   background-image: url("../billeder/Billeder/farveprøver.JPG");
   background-repeat: no-repeat;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 200%;
+  background-size: cover;
+  overflow: hidden;
 }
 #section2 {
   background-image: url("../billeder/Billeder/glaseret\ kop.JPG");
   background-repeat: no-repeat;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 200%;
+  background-size: cover;
+  overflow: hidden;
 
 }
 #section3 {
   background-color: #ded7c9;
+  justify-content: center;
 }
 #section4 {
   background-color: #c8ddd7;
