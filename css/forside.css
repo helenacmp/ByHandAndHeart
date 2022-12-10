@@ -16,7 +16,7 @@
   font-family: "OpenSans";
   src: url(fonte/OpenSans-Regular.ttf);
 }
-/* ––––––––––––––––––––––––––––––– forside navigationslinje og loop video ––––––––––––––––––––––––––––––– */
+/* ––––––––––––––––––––––––––––––––––––––––––– forside navigationslinje og loop video –––––––––––––––––––––––––––––––––––––––––– */
 /* navigationslinje og forside video */
 .hero {
   width: 100%;
@@ -31,7 +31,7 @@
   justify-content: center;
 }
 /* hele navigations linjen m. logo */
-nav {
+.navbar {
   width: 100%;
   position: absolute;
   top: 0;
@@ -47,20 +47,45 @@ nav .logo {
   /* angiver størrelsen */
   width: 100px;
 }
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
 /* links i navigationslinjen */
-nav ul li {
+.nav-item {
   list-style: none;
   display: inline-block;
   margin-left: 40px;
 }
 /* styling af tekst i navigationslinjen */
-nav ul li a {
+.nav-link {
   text-decoration: none;
   color: #a69278;
   font-size: 20px;
   font-family: Oswald;
 }
-/* content - overskrift + link til keramik og kurser */
+/* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #a69278;
+}
+
+/* –––––––––––––– content ––––––––––––––––––––– */
+/* overskrift + link til keramik og kurser */
 .content {
   text-align: center;
   margin-bottom: 10%;
@@ -108,5 +133,45 @@ nav ul li a {
   .back-video {
     width: auto;
     height: 100%;
+  }
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* laver 3 streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    /* så man ikke kan se menuen før den åbnes */
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #ded7c9;
+    width: 30%;
+    text-align: center;
+    /* Tiden det tager at åbne burgermenuen */
+    transition: 0.3s;
+  }
+  /* laver afstand mellem links i burgermenu */
+  .nav-item {
+    margin: 16px 0;
+  }
+  /* viser menuen når den åbnes */
+  .nav-menu.active {
+    right: 0;
   }
 }
