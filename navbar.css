@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ded7c9;
+}
+/* selve logoet */
+nav .logo {
+  /* angiver størrelsen */
+  width: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 0 40px;
+}
+
+/* links i navigationslinjen */
+.nav-item {
+  list-style: none;
+  display: inline-block;
+}
+/* styling af tekst i navigationslinjen */
+.nav-link {
+  text-decoration: none;
+  color: #a69278;
+  font-size: 20px;
+  font-family: "Oswald";
+}
+/* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #a69278;
+}
+
+/* ––––––––––––––––––– søg og kurv ––––––––––––––––––– */
+.søg,
+.kurv {
+  aspect-ratio: 86/96;
+  height: 35px;
+  margin: 20px;
+}

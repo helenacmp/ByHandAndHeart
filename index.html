@@ -19,11 +19,24 @@
         <video autoplay loop muted plays-inline class="back-video">
           <source src="videoer/Drejeskive.MP4" type="video/mp4" />
         </video>
+
         <nav class="navbar">
           <a href="index.html"><img src="components/Logo-gennemsigtigt.svg" alt="logo" class="logo" /></a>
           <ul class="nav-menu">
             <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
-            <li class="nav-item"><a href="produkter.html" class="nav-link">Shop</a></li>
+            <li class="nav-item">
+              <a href="produkter.html" class="nav-link">Shop <i></i></a>
+              <div class="dropdown_menu">
+                <ul>
+                  <li class="nav-item"><a href="#" class="nav-link">Vaser</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Krus</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Skåle</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Kander</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Lågkrukker</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link">Vægophæng</a></li>
+                </ul>
+              </div>
+            </li>
             <li class="nav-item"><a href="om.html" class="nav-link">Om</a></li>
             <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
           </ul>
@@ -31,6 +44,10 @@
             <span class="bar"></span>
             <span class="bar"></span>
             <span class="bar"></span>
+          </div>
+          <div class="kurv-søg">
+            <img src="components/søg.svg" alt="søg" class="søg" />
+            <img src="components/Kurv.svg" alt="Kurv" class="kurv" />
           </div>
         </nav>
         <div class="content">
@@ -46,13 +63,14 @@
         <section id="section1">
           <h2>KURSER</h2>
           <p>Se hvilke kurser jeg afholder det næste år</p>
-          <button>Book nu</button>
+          <a href="#" class="tyrkis_knap">Book nu</a>
         </section>
         <section id="section2">
           <h2>KERAMIK</h2>
-          <button>Shop her</button>
+          <a href="#" class="tyrkis_knap">Shop her</a>
         </section>
       </div>
+<<<<<<< HEAD
       <section id="section3">
         <div class="grid3-2">
           <div class="se_alle_nyheder">
@@ -71,6 +89,24 @@
             <h4>150 kr.</h4>
             <button class="kurv_knap">Tilføj til kurv</button>
           </div>
+=======
+      <section id="section3" class="grid3-2">
+        <div class="se_alle_nyheder">
+          <h2>SE ALLE NYHEDER</h2>
+          <a href="#" class="alle_nyheder_btn">Vis alle nyheder</a>
+        </div>
+        <img src="billeder/Billeder/produkter_1.JPG" alt="" class="img_ophæng" />
+        <img src="billeder/Billeder/krus_1.JPG" alt="" class="img_krus" />
+        <div class="text_og_knap_1">
+          <h3>Vægophæng</h3>
+          <h4>500 kr.</h4>
+          <a href="#" class="kurv_knap">Tilføj til kurv</a>
+        </div>
+        <div class="text_og_knap_2">
+          <h3>Kopper</h3>
+          <h4>150 kr.</h4>
+          <a href="#" class="kurv_knap">Tilføj til kurv</a>
+>>>>>>> cb724fd (dropdown menu tilføjes)
         </div>
       </section>
       <section id="section4" class="grid2">
@@ -78,7 +114,7 @@
         <div>
           <h2>KERAMIK LAVET PÅ NATURLIGE MATRIALER</h2>
           <h3>Læs mere om processen bag mit håndværk</h3>
-          <button>Læs mere her</button>
+          <a href="#" class="tyrkis_knap">Læs mere her</a>
         </div>
       </section>
     </main>

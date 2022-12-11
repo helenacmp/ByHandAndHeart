@@ -74,14 +74,17 @@ nav .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 60px;
+  position: relative;
+  gap: 40px;
+  margin: 0 40px;
 }
 
 /* links i navigationslinjen */
 .nav-item {
   list-style: none;
   display: inline-block;
-  margin-left: 40px;
+  display: flex;
+  position: relative;
 }
 /* styling af tekst i navigationslinjen */
 .nav-link {
@@ -89,7 +92,34 @@ nav .logo {
   color: #a69278;
   font-size: 20px;
   font-family: "Oswald";
+
+  transition: all 0.3s;
 }
+
+.nav-menu li a:hover {
+  color: #78a99b;
+}
+/* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
+.dropdown_menu {
+  display: none;
+}
+.navbar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ded7c9;
+}
+.navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.navbar ul li:hover i.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
 /* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
 .hamburger {
   display: none;
@@ -105,20 +135,31 @@ nav .logo {
   transition: all 0.3s ease-in-out;
   background-color: #a69278;
 }
+
+/* ––––––––––––––––––– søg og kurv ––––––––––––––––––– */
+.søg,
+.kurv {
+  aspect-ratio: 86/96;
+  height: 35px;
+  margin: 20px;
+}
 /* –––––––––––––––––––––––––––––––––––––––Annimation af pil––––––––––––––––––––––––––––––––––––––– */
 @keyframes mover {
-  0% { transform: translateY(0); }
-  100% { transform: translateY(-50px); }
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50px);
+  }
 }
 
 img.mover {
   transform-origin: 50% 50%;
-  animation: mover 1s infinite  alternate;
+  animation: mover 1s infinite alternate;
   position: absolute;
   top: 90%;
- 
 }
-/* –––––––––––––– content ––––––––––––––––––––– */
+/* ––––––––––––––––––– content ––––––––––––––––––––– */
 /* overskrift + link til keramik og kurser */
 .content {
   text-align: center;
@@ -176,7 +217,8 @@ img.mover {
   background-image: url("../billeder/Billeder/farveprøver.JPG");
   background-repeat: no-repeat;
   max-width: 100%;
-  max-height: 200%;
+  height: 100%;
+  /* max-height: 200%; */
   background-size: cover;
   overflow: hidden;
 }
@@ -184,10 +226,10 @@ img.mover {
   background-image: url("../billeder/Billeder/glaseret\ kop.JPG");
   background-repeat: no-repeat;
   max-width: 100%;
-  max-height: 200%;
+  height: 100%;
+  /* max-height: 200%; */
   background-size: cover;
   overflow: hidden;
-
 }
 #section3 {
   background-color: #ded7c9;
