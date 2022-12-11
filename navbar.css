@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* hele navigations linjen m. logo */
 .navbar {
   width: 100%;
   position: absolute;
@@ -25,6 +25,7 @@ nav .logo {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
   gap: 40px;
   margin: 0 40px;
 }
@@ -33,6 +34,8 @@ nav .logo {
 .nav-item {
   list-style: none;
   display: inline-block;
+  display: flex;
+  position: relative;
 }
 /* styling af tekst i navigationslinjen */
 .nav-link {
@@ -40,7 +43,34 @@ nav .logo {
   color: #a69278;
   font-size: 20px;
   font-family: "Oswald";
+
+  transition: all 0.3s;
 }
+
+.nav-menu li a:hover {
+  color: #78a99b;
+}
+/* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
+.dropdown_menu {
+  display: none;
+}
+.navbar ul li:hover .dropdown_menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: #ded7c9;
+}
+.navbar ul li:hover .dropdown_menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.navbar ul li:hover i.dropdown_menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
 /* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
 .hamburger {
   display: none;
