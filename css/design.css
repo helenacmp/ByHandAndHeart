@@ -5,6 +5,41 @@
     height:100vh; 
 } */
 
+/* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
+@font-face {
+  font-family: "Aclonica";
+  src: url(fonte/Aclonica-Regular.ttf);
+}
+@font-face {
+  font-family: "Oswald";
+  src: url(fonte/Oswald.ttf);
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url(fonte/OpenSans-Regular.ttf);
+}
+/* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
+h2 {
+  font-family: "Oswald";
+  color: white;
+  font-size: 30px;
+}
+h3 {
+  font-family: "Oswald";
+  color: white;
+  font-size: 20px;
+}
+h4 {
+  font-family: "OpenSans";
+  color: white;
+  font-size: 16px;
+}
+p {
+  font-family: "OpenSans";
+  color: white;
+  font-size: 16px;
+}
+
 body {
   background-color: white;
   max-width: 100vw;
@@ -24,12 +59,67 @@ body {
   justify-content: top center;
 }
 
+/* hele navigations linjen m. logo */
+.navbar {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px 4%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ded7c9;
+}
+/* selve logoet */
+nav .logo {
+  /* angiver størrelsen */
+  width: 100px;
+}
+
 nav {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   padding: 20px 8%;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+/* links i navigationslinjen */
+.nav-item {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+/* styling af tekst i navigationslinjen */
+.nav-link {
+  text-decoration: none;
+  color: #a69278;
+  font-size: 20px;
+  font-family: "Oswald";
+}
+
+/* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #a69278;
 }
 
 video {
@@ -146,4 +236,9 @@ video {
     margin-bottom: 12px;
     color: black;
   }
+}
+
+/* –––––––––––––––––––– Footer ––––––––––––––––––––––––– */
+footer {
+  background-color: #ded7c9;
 }
