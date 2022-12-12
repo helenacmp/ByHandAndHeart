@@ -6,9 +6,6 @@
 /* hele navigations linjen m. logo */
 .navbar {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
   padding: 5px 4%;
   display: flex;
   align-items: center;
@@ -93,4 +90,43 @@ nav .logo {
   aspect-ratio: 86/96;
   height: 35px;
   margin: 20px;
+}
+
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  /* laver 3 streger til et kryds */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  .nav-menu {
+    position: fixed;
+    /* så man ikke kan se menuen før den åbnes */
+    right: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--lysbrun);
+    width: 30%;
+    text-align: center;
+    /* Tiden det tager at åbne burgermenuen */
+    transition: 0.3s;
+  }
+  /* laver afstand mellem links i burgermenu */
+  .nav-item {
+    margin: 16px 0;
+  }
+  /* viser menuen når den åbnes */
+  .nav-menu.active {
+    right: 0;
+  }
 }
