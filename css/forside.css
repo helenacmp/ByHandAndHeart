@@ -282,6 +282,7 @@ footer h3 {
 .footer_kategorier a {
   text-decoration: none;
   color: var(--brun);
+  font-family: "OpenSans";
 }
 
 .SoMe-illustrationer a {
@@ -289,7 +290,7 @@ footer h3 {
 }
 
 .SoMe-illustrationer img {
-  max-width: 30px;
+  max-width: 40px;
 }
 
 .footer_billede {
@@ -303,12 +304,16 @@ footer h3 {
   grid-area: 1/ 5/ 1/ 7;
 }
 
+.footer_BHH p {
+  color: var(--brun);
+}
+
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
-
   /* laver 3 streger til et kryds */
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -319,7 +324,6 @@ footer h3 {
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
   .nav-menu {
     position: fixed;
     /* så man ikke kan se menuen før den åbnes */
