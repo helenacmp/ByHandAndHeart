@@ -3,6 +3,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
+  height: 600px;
 }
 #section1 {
   display: block;
@@ -70,6 +71,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
+  height: 600px;
 }
 
 .img_processen {
@@ -84,7 +86,7 @@
 #section4 .flex div {
   margin: 20px;
 }
-
+/* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .text_og_knap_1 {
   display: grid;
   grid-column-start: 3;
