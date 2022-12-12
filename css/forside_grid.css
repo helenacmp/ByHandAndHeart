@@ -65,6 +65,26 @@
   background-size: cover;
   overflow: hidden;
 }
+/* ––––––––––––––––––––––––––––– section 4 ––––––––––––––––––––––––––––– */
+#section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.img_processen {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#section4 .flex {
+  display: flex;
+  align-items: center;
+}
+#section4 .flex div {
+  margin: 20px;
+}
+
 .text_og_knap_1 {
   display: grid;
   grid-column-start: 3;

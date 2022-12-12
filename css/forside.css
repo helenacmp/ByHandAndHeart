@@ -3,6 +3,13 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+html {
+  --lysbrun: #ded7c9;
+  --brun: #a69278;
+  --lystyrkis: #c8ddd7;
+  --tyrkis: #78a99b;
+}
 /* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
 @font-face {
   font-family: "Aclonica";
@@ -62,7 +69,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #ded7c9;
+  background-color: var(--lysbrun);
 }
 /* selve logoet */
 nav .logo {
@@ -89,7 +96,7 @@ nav .logo {
 /* styling af tekst i navigationslinjen */
 .nav-link {
   text-decoration: none;
-  color: #a69278;
+  color: var(--brun);
   font-size: 20px;
   font-family: "Oswald";
 
@@ -97,7 +104,7 @@ nav .logo {
 }
 
 .nav-menu li a:hover {
-  color: #78a99b;
+  color: var(--tyrkis);
 }
 /* ––––––––––––––––––– Dropdown menu ––––––––––––––––––– */
 .dropdown_menu {
@@ -108,7 +115,7 @@ nav .logo {
   position: absolute;
   left: 0;
   top: 100%;
-  background-color: #ded7c9;
+  background-color: var(--lysbrun);
 }
 .navbar ul li:hover .dropdown_menu ul {
   display: block;
@@ -133,7 +140,7 @@ nav .logo {
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  background-color: #a69278;
+  background-color: var(--brun);
 }
 
 /* ––––––––––––––––––– søg og kurv ––––––––––––––––––– */
@@ -183,7 +190,7 @@ img.mover {
   color: white;
   font-size: 24px;
   font-family: "Oswald";
-  background-color: #ded7c9;
+  background-color: var(--lysbrun);
   padding: 14px 70px;
   border-radius: 50px;
   margin: 40px 40px 0 40px;
@@ -223,8 +230,9 @@ img.mover {
   overflow: hidden;
 }
 #section2 {
-  background-image: url("../billeder/Billeder/glaseret\ kop.JPG");
+  background-image: url("../billeder/blå.JPG");
   background-repeat: no-repeat;
+  background-size: cover;
   max-width: 100%;
   height: 100%;
   /* max-height: 200%; */
@@ -232,16 +240,16 @@ img.mover {
   overflow: hidden;
 }
 #section3 {
-  background-color: #ded7c9;
+  background-color: var(--lysbrun);
   justify-content: center;
 }
 #section4 {
-  background-color: #c8ddd7;
+  background-color: var(--lystyrkis);
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
-  background-color: #ded7c9;
+  background-color: var(--lysbrun);
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -268,7 +276,7 @@ footer {
     top: 70px;
     gap: 0;
     flex-direction: column;
-    background-color: #ded7c9;
+    background-color: var(--lysbrun);
     width: 30%;
     text-align: center;
     /* Tiden det tager at åbne burgermenuen */
