@@ -113,7 +113,7 @@
 
 /* ––––––––––––––––––– cover-billede ––––––––––––––––––– */
   .cover-billede {
-    height: 700px;
+    height: 50vh;
     background-image: url("../billeder/farveprøver.JPG");
     background-size: cover; 
   }
