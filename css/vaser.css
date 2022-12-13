@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  --lysbrun: #ded7c9;
+  --brun: #a69278;
+  --lystyrkis: #c8ddd7;
+  --tyrkis: #78a99b;
+}
+
 /* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
 @font-face {
   font-family: "Aclonica";
@@ -235,8 +242,12 @@ nav .logo {
 
 /*-----------------knap-------------*/
 
-.container btn {
-  padding: 20%;
+.btn_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 
 .btn {
@@ -248,8 +259,14 @@ nav .logo {
   text-align: center;
   background-color: #a69278;
   padding: 14px 0;
-  width: 120px;
+  width: 130px;
   border-radius: 50px;
+}
+
+.pris {
+  color: #a69278;
+  margin-right: 20px;
+  align-items: center;
 }
 
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
