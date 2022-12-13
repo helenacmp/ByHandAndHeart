@@ -49,10 +49,8 @@
     z-index: 1;
 }
 #video_file {
-    position: absolute;
     object-fit: cover;
-    height:50%;
-    max-width: 60%; 
+    max-width: 100%; 
     display: grid;
     grid-column: 1;
     
@@ -64,7 +62,6 @@
     grid-column: 1;
 }
 #volume_container {
-    position: absolute;
     left: 2%;
     bottom: 50%;
     width: 10%;
