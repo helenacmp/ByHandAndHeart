@@ -39,13 +39,6 @@
     grid-row: 1;
 }
 
-/* #controls {
-    display: flex;
-    grid-template-columns: 1fr 1fr;
-    grid-row: 3;
-    background-color: darkseagreen;
-} */
-
 .flex-container {
 display: flex;
 flex-direction:row;
@@ -64,16 +57,17 @@ height: fit-content;
 
 #play {
     background-repeat: no-repeat;
-    flex-shrink: 1;
-    flex-grow: 1;
+    display: inline-block;
+    padding: 14px 0;
+    width: 100px;
 
 }
 #stop {
     background-repeat: no-repeat;
-    flex-grow: 1;
-    flex-shrink: 1;
+    display: inline-block;
+    padding: 14px 0;
+    width: 100px;
 }
-
 
 /* --------------Billeder--------------------------- */
 

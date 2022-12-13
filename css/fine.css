@@ -148,13 +148,13 @@ nav .logo {
 
 h2 {
   font-family: "Oswald";
-  color: black;
-  font-size: 30px;
+  color: #78a99b;
+  font-size: 20px;
 }
 h3 {
   font-family: "Oswald";
-  color: black;
-  font-size: 20px;
+  color: #78a99b;
+  font-size: 30px;
 }
 h4 {
   font-family: "OpenSans";
@@ -163,8 +163,8 @@ h4 {
 }
 p {
   font-family: "OpenSans";
-  color: black;
-  font-size: 16px;
+  color: white;
+  font-size: 18px;
 }
 /* ----- body --------- */
 body {
@@ -221,6 +221,43 @@ header {
 .nav-bar ul li a.active {
   color: black;
   background: white;
+}
+/* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+footer {
+  background-color: var(--lysbrun);
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr 1fr 2fr;
+  padding: 30px;
+  overflow: hidden;
+}
+footer h3 {
+  color: var(--brun);
+}
+.footer_kategorier li {
+  list-style: none;
+}
+.footer_kategorier a {
+  text-decoration: none;
+  color: var(--brun);
+  font-family: "OpenSans";
+}
+.SoMe-illustrationer a {
+  text-decoration: none;
+}
+.SoMe-illustrationer img {
+  max-width: 40px;
+}
+.footer_billede {
+  grid-area: 1/ 4/ 1/ 5;
+  width: 100px;
+  height: auto;
+  justify-self: center;
+}
+.footer_BHH {
+  grid-area: 1/ 5/ 1/ 7;
+}
+.footer_BHH p {
+  color: var(--brun);
 }
 /* ––––––––––––––––––––––––––––––––––––––– Under 1320px ––––––––––––––––––––––––––––––––––––––– */
 @media only screen and (max-width: 1320px) {
