@@ -134,22 +134,22 @@ nav .logo {
 /* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
 @font-face {
   font-family: "Aclonica";
-  src: url(fonte/Aclonica-Regular.ttf);
+  src: url(../fonte/Aclonica-Regular.ttf);
 }
 @font-face {
   font-family: "Oswald";
-  src: url(fonte/Oswald.ttf);
+  src: url(../fonte/Oswald.ttf);
 }
 @font-face {
   font-family: "OpenSans";
-  src: url(fonte/OpenSans-Regular.ttf);
+  src: url(../fonte/OpenSans-Regular.ttf);
 }
 /* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
 
 h2 {
   font-family: "Oswald";
   color: #78a99b;
-  font-size: 20px;
+  font-size: 40px;
 }
 h3 {
   font-family: "Oswald";
@@ -164,7 +164,7 @@ h4 {
 p {
   font-family: "OpenSans";
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 }
 /* ----- body --------- */
 body {
