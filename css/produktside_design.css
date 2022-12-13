@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
+  }
+  html {
+    --lysbrun: #ded7c9;
+    --brun: #a69278;
+    --lystyrkis: #c8ddd7;
+    --tyrkis: #78a99b;
+  }
 /* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
 @font-face {
     font-family: "Aclonica";
