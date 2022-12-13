@@ -12,15 +12,15 @@ html {
 /* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
 @font-face {
   font-family: "Aclonica";
-  src: url(fonte/Aclonica-Regular.ttf);
+  src: url("../fonte/Aclonica-Regular.ttf");
 }
 @font-face {
   font-family: "Oswald";
-  src: url(fonte/Oswald.ttf);
+  src: url("../fonte/Oswald.ttf");
 }
 @font-face {
   font-family: "OpenSans";
-  src: url(fonte/OpenSans-Regular.ttf);
+  src: url("../fonte/OpenSans-Regular.ttf");
 }
 /* –––––––––––––––––––––– Typografier –––––––––––––––––––––– */
 h1 {
