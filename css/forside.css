@@ -3,7 +3,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 html {
   --lysbrun: #ded7c9;
   --brun: #a69278;
@@ -27,7 +26,7 @@ html {
 h2 {
   font-family: "Oswald";
   color: white;
-  font-size: 30px;
+  font-size: 40px;
 }
 h3 {
   font-family: "Oswald";
@@ -44,7 +43,6 @@ p {
   color: white;
   font-size: 16px;
 }
-
 /* ––––––––––––––––––––––––––––––––––––––––––– forside navigationslinje og loop video –––––––––––––––––––––––––––––––––––––––––– */
 /* navigationslinje og forside video */
 .hero {
@@ -76,7 +74,6 @@ nav .logo {
   /* angiver størrelsen */
   width: 100px;
 }
-
 .nav-menu {
   display: flex;
   justify-content: space-between;
@@ -85,7 +82,6 @@ nav .logo {
   gap: 40px;
   margin: 0 40px;
 }
-
 /* links i navigationslinjen */
 .nav-item {
   list-style: none;
@@ -99,10 +95,8 @@ nav .logo {
   color: var(--brun);
   font-size: 20px;
   font-family: "Oswald";
-
   transition: all 0.3s;
 }
-
 .nav-menu li a:hover {
   color: var(--tyrkis);
 }
@@ -121,18 +115,15 @@ nav .logo {
   display: block;
   margin: 10px;
 }
-
 .navbar ul li:hover i.dropdown_menu ul li {
   width: 150px;
   padding: 10px;
 }
-
 /* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
 .hamburger {
   display: none;
   cursor: pointer;
 }
-
 .bar {
   display: block;
   width: 25px;
@@ -142,7 +133,6 @@ nav .logo {
   transition: all 0.3s ease-in-out;
   background-color: var(--brun);
 }
-
 /* ––––––––––––––––––– søg og kurv ––––––––––––––––––– */
 .søg,
 .kurv {
@@ -159,7 +149,6 @@ nav .logo {
     transform: translateY(-50px);
   }
 }
-
 img.mover {
   transform-origin: 50% 50%;
   animation: mover 1s infinite alternate;
@@ -191,7 +180,8 @@ img.mover {
   font-size: 24px;
   font-family: "Oswald";
   background-color: var(--lysbrun);
-  padding: 14px 70px;
+  padding: 14px 0;
+  width: 200px;
   border-radius: 50px;
   margin: 40px 40px 0 40px;
   /* laver sknapperne 3D med en skygge */
@@ -217,9 +207,8 @@ img.mover {
     height: 100%;
   }
 }
-
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Main ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+/* ––––––––––––––––––––– section 1 ––––––––––––––––––––– */
 #section1 {
   background-color: var(--lysbrun);
   background-image: url("../billeder/tætler.JPG");
@@ -229,11 +218,19 @@ img.mover {
   /* max-height: 200%; */
   background-size: cover;
   overflow: hidden;
+  display: block;
+  grid-column: 1/2;
 }
 #section1 .indhold {
   margin: 40px;
 }
-
+#grid_1-1 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: 600px;
+}
+/* ––––––––––––––––––––– section 2 ––––––––––––––––––––– */
 #section2 {
   background-color: var(--lysbrun);
   background-image: url("../billeder/blå.JPG");
@@ -244,24 +241,121 @@ img.mover {
   /* max-height: 200%; */
   background-size: cover;
   overflow: hidden;
+  display: block;
+  grid-column: 2/3;
 }
-
 #section2 .indhold {
   margin: 40px;
 }
+/* ––––––––––––––––––––– section 3 ––––––––––––––––––––– */
 #section3 {
+  padding: 40px;
   background-color: var(--lysbrun);
+  /* justify-content: center; */
+  display: grid;
+  grid-template-columns: 3fr 2fr 2fr;
+  width: 100%;
+  overflow: hidden;
+}
+.se_alle_nyheder {
+  position: absolute;
   justify-content: center;
+  font-size: 100px;
+  grid-area: 1/1/2/2;
+  justify-content: center;
+  font-size: 100px;
 }
-
-#section4 h2 {
-  color: var(--tyrkis);
+.img_ophæng {
+  grid-area: 1/2/2/3;
+  max-width: 100%;
+  padding: 20px;
 }
-
+.img_krus {
+  grid-area: 1/3/2/4;
+  max-width: 100%;
+  padding: 20px;
+}
+.text_ophæng {
+  grid-area: 2/2/3/3;
+  padding: 0 0 0 20px;
+}
+.text_krus {
+  grid-area: 2/3/3/4;
+  padding: 0 0 0 20px;
+}
+.knap_ophæng {
+  grid-area: 3/2/4/3;
+}
+.knap_krus {
+  grid-area: 3/3/4/4;
+}
+.alle_nyheder_btn {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-family: "Oswald";
+  background-color: #a69278;
+  padding: 14px 50px;
+  border-radius: 50px;
+  margin: 40px 40px 0 40px;
+  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
+}
+.kurv_knap {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-family: "Oswald";
+  text-align: center;
+  background-color: var(--brun);
+  padding: 14px 0;
+  width: 200px;
+  border-radius: 50px;
+  margin: 40px 40px 0 40px;
+  /* laver sknapperne 3D med en skygge */
+  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
+}
+/* ––––––––––––––––––––– section 4 ––––––––––––––––––––– */
 #section4 {
   background-color: var(--lystyrkis);
 }
-
+#section4 h2 {
+  color: var(--tyrkis);
+}
+#section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  height: 600px;
+}
+.img_processen {
+  max-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#section4 .flex {
+  display: flex;
+  align-items: center;
+}
+#section4 .flex div {
+  margin: 20px;
+}
+.tyrkis_knap {
+  text-decoration: none;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-family: "Oswald";
+  text-align: center;
+  background-color: var(--tyrkis);
+  padding: 14px 0;
+  width: 200px;
+  border-radius: 50px;
+  margin: 40px 40px 0 40px;
+  /* laver sknapperne 3D med en skygge */
+  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
+}
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
   background-color: var(--lysbrun);
@@ -270,46 +364,36 @@ footer {
   padding: 30px;
   overflow: hidden;
 }
-
 footer h3 {
   color: var(--brun);
 }
-
 .footer_kategorier li {
   list-style: none;
 }
-
 .footer_kategorier a {
   text-decoration: none;
   color: var(--brun);
   font-family: "OpenSans";
 }
-
 .SoMe-illustrationer a {
   text-decoration: none;
 }
-
 .SoMe-illustrationer img {
   max-width: 40px;
 }
-
 .footer_billede {
   grid-area: 1/ 4/ 1/ 5;
   width: 100px;
   height: auto;
   justify-self: center;
 }
-
 .footer_BHH {
   grid-area: 1/ 5/ 1/ 7;
 }
-
 .footer_BHH p {
   color: var(--brun);
 }
-
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 @media (max-width: 768px) {
   .hamburger {
     display: block;

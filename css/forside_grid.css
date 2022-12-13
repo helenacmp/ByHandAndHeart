@@ -1,5 +1,5 @@
 /* ----------------------Grid 1-1------------------ */
-#grid_1-1 {
+/* #grid_1-1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
@@ -12,13 +12,12 @@
 #section2 {
   display: block;
   grid-column: 2/3;
-}
+} */
 /* ------------Grid 3-2 -------------------------*/
-.grid3-2 {
+/* .grid3-2 {
   padding: 40px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
 }
 .se_alle_nyheder {
   display: grid;
@@ -39,10 +38,9 @@
   font-size: 24px;
   font-family: "Oswald";
   background-color: #a69278;
-  padding: 14px 70px;
+  padding: 14px 50px;
   border-radius: 50px;
   margin: 40px 40px 0 40px;
-  /* laver sknapperne 3D med en skygge */
   box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
 }
 .img_ophæng {
@@ -55,7 +53,6 @@
   background-size: cover;
   overflow: hidden;
 }
-
 .img_krus {
   display: grid;
   grid-column: 4;
@@ -65,27 +62,7 @@
   max-height: 100%;
   background-size: cover;
   overflow: hidden;
-}
-/* ––––––––––––––––––––––––––––– section 4 ––––––––––––––––––––––––––––– */
-#section4 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 50px;
-  height: 600px;
-}
-
-.img_processen {
-  max-width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#section4 .flex {
-  display: flex;
-  align-items: center;
-}
-#section4 .flex div {
-  margin: 20px;
-}
+} */
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 .text_og_knap_1 {
   display: grid;
@@ -100,32 +77,4 @@
   grid-column-end: 5;
   grid-row-start: 2;
   grid-row-end: 3;
-}
-.kurv_knap {
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  font-size: 18px;
-  font-family: "Oswald";
-  background-color: #a69278;
-  padding: 10px 5px;
-  border-radius: 50px;
-  margin: 35px;
-  text-align: center;
-  /* laver sknapperne 3D med en skygge */
-  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
-}
-
-.tyrkis_knap {
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  font-size: 24px;
-  font-family: "Oswald";
-  background-color: #78a99b;
-  padding: 14px 70px;
-  border-radius: 50px;
-  margin: 40px 40px 0 40px;
-  /* laver sknapperne 3D med en skygge */
-  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
 }
