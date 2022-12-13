@@ -11,10 +11,39 @@
     <title>OM MIG</title>
   </head>
   <header>
+    <nav class="navbar">
+      <a href="index.html"><img src="components/Logo-gennemsigtigt.svg" alt="logo" class="logo" /></a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link">Hjem</a></li>
+        <li class="nav-item">
+          <a href="produkter.html" class="nav-link">Shop <i></i></a>
+          <div class="dropdown_menu">
+            <ul>
+              <li class="nav-item"><a href="#" class="nav-link">Vaser</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Krus</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Skåle</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Kander</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Lågkrukker</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">Vægophæng</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav-item"><a href="om.html" class="nav-link">Om</a></li>
+        <li class="nav-item"><a href="#" class="nav-link">FAQ</a></li>
+      </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <div class="kurv-søg">
+        <img src="components/søg.svg" alt="søg" class="søg" />
+        <img src="components/Kurv.svg" alt="Kurv" class="kurv" />
+      </div>
+    </nav>
   </header>
   <body>
-    <h1>OM MIG</h1>
-    <h2>By Hand And Heart</h2>
+    <h2>OM MIG</h2>
     <section class="grid_2-2">
       <p>Mit navn er Helle Hegner. Jeg har altid elsket at arbejde med hænderne, og at fordybe mig i form og materialer.
         Oprindeligt er jeg uddannet grafisk designer fra Danmarks Designskole.
@@ -23,7 +52,7 @@
         Jeg har arbejdet med keramikken i 12-13 år, og dertil haft eget værksted de sidste 7 år.
         Primært drejer jeg i stentøj, men dog kaster jeg mig over størrer modelleringsarbejder og støbning.
         For mig er drejning ren meditation. En process, der kræver fuld fokus.</p>
-      <img class="img1" alt="hellesmil" src="billeder/Billeder/helle_smil.JPG">
+      <img class="img1" alt="hellesmil" src="billeder/helle_smil.JPG">
     </section>
     <section class="grid_1">
       <div id="video_container">
@@ -31,7 +60,7 @@
         <input id="volControl" class="slider" type="range" min="1" max="100" value="50">
       </div>
       <video id="video_file">
-        <source src="/videoer/Drejeskive.MP4" type="video/mp4">
+        <source src="videoer/Drejeskive.MP4" type="video/mp4">
       </video>
       <div id="controls">
         <div id="play">
@@ -40,11 +69,14 @@
         <div id="stop">
           <div id="img3">
       </div>
+      <div id="bag_container">
+        <h3>Bag Processen</h3>
+        <p>bag det hele</p>
     </section>
     <section class="grid_2">
-      <img src="billeder/Billeder/helleisites.JPG" alt="helleisites" class="img4">
-      <img src="billeder/Billeder/helle_redskaber.JPG" class="img5" alt="helle_redskaber">
-      <img src="billeder/Billeder/produkter_høj.JPG" class="img6" alt="hellemedler">
+      <img src="billeder/helleisites.JPG" alt="helleisites" class="img4">
+      <img src="billeder/helle_redskaber.JPG" class="img5" alt="helle_redskaber">
+      <img src="billeder/produkter_høj.JPG" class="img6" alt="hellemedler">
     </section>
   </body>
 </html>

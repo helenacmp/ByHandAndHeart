@@ -17,8 +17,9 @@
 }
 .grid_1 {
     display: grid;
-    grid-template-columns: 3fr; 
+    grid-template-columns: 1fr 1fr; 
 }
+
 .grid_2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; 
@@ -49,16 +50,14 @@
     position: absolute;
     object-fit: cover;
     height:50%;
-    max-width: 100%; 
+    max-width: 60%; 
     display: grid;
     grid-column: 1;
     
 } 
 #video_container {
-    width: 200%;
-    aspect-ratio: 16/9;
-    line-height: 5;
-    position: relative;
+    width: 100%;
+    line-height: 3;
     display: grid;
     grid-column: 1;
 }
@@ -69,31 +68,28 @@
     width: 10%;
     z-index: 1;
 }
+#bag_container h3 {
+    grid-column: 2;
+}
 #play {
-    background-image: url("../play.svg");
+    background-image: url("components/play.svg");
     background-size: 45%;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(225, 220, 231);
     width: 3%;
-    aspect-ratio: 1/1;
     cursor: pointer;
-    border: 2px solid black;
     padding: 5px;
     height: 3%;
     border-radius: 5px;
     z-index: 1;
 }
 #stop {
-    background-image: url("../stop.svg");
+    background-image: url("components/stop.svg");
     background-size: 45%;
     background-position: center;
     background-repeat: no-repeat;
-    background-color: rgb(225, 220, 231);
     width: 100%;
-    aspect-ratio: 1/1;
     cursor: pointer;
-    border: 2px solid black;
     padding: 5px;
     height: 98%;
     margin-left: 130%;
@@ -104,6 +100,5 @@
 #controls {
     grid-column: 1;
     display: grid;
-    gap: 1em;
 }
 /*-----------------*/
