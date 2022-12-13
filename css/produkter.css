@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  --lysbrun: #ded7c9;
+  --brun: #a69278;
+  --lystyrkis: #c8ddd7;
+  --tyrkis: #78a99b;
+}
 
 /* –––––––––––––––––––––– Font-face –––––––––––––––––––––– */
 @font-face {
@@ -211,6 +217,7 @@ nav .logo {
   display: grid;
   grid-template-columns: repeat(3, calc(((100vw - 4rem) / 3)));
   grid-auto-rows: auto 1fr;
+  row-gap: 0px;
   gap: 1rem;
   margin: 1rem 0;
   padding: 0 1rem;
@@ -218,13 +225,12 @@ nav .logo {
 
 .item {
   width: 100%;
-  height: 68.5%;
-  overflow: hidden;
+  height: 100;
 }
 
 .item img {
   width: 100%;
-  height: 100%;
+  height: 68%;
   object-fit: cover;
 }
 
