@@ -9,6 +9,9 @@ html {
     grid-template-columns: 1fr 2fr;
     padding: 5px;
    }
+.grid_1-2 h2 {
+    color: #a69278;
+}
 img {
     max-width: 100%;
     display: block;
@@ -19,7 +22,8 @@ img {
 /* --------------Video og tekst--------------------------- */
 .grid_video {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
     background-color: var(--lysbrun);
     margin: 5px;
     padding: 10px;
@@ -27,13 +31,15 @@ img {
 .grid_video h2 {
     display: grid;
     grid-column: 1;
+    grid-row: 1;
     font-family: "Oswald";
-    color: black;
+    color:#a69278;
     font-size: 40px;
     text-align: center;
 }
 #video_yt {
 display: block;
 grid-column: 2;
-overflow: hidden;
+grid-row: 2;
+/* overflow: hidden; */
 }
