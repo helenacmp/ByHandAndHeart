@@ -24,6 +24,7 @@ function start() {
     video.currentTime = 0;
     playBtn.style.backgroundImage = "url(../components/stop.svg)";
   }
+ 
 
   function changeVolume() {
     console.log(volSlider.value);
