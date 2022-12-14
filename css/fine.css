@@ -23,6 +23,11 @@ h2 {
   font-family: "Oswald";
   color: #78a99b;
   font-size: 60px;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Aclonica";
 }
 h3 {
   font-family: "Oswald";
