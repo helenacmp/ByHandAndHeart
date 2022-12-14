@@ -142,39 +142,25 @@ p {
     background-size: cover; 
   }
 .wrapper .center {
-  text-align: justify;
-  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   user-select: none;
 }
 .center h1 {
-  color: white;
-  font-size: 70px;
-  font-weight: bold;
-  width: 100%;
-  text-align: center;
-}
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    width: 900px;
+    text-align: center;
+  }
 /* –––––––––––––––––––––––––––––––––––––––Body design––––––––––––––––––––––––––––––––––––––– */
 body {
   background-color: rgb(255, 255, 255);
   max-width: 100vw;
   margin: 0;
   padding: 0px;
-}
-/* –––––––––––––––––––––––––––––––––––––––Farvet boks med tekst i––––––––––––––––––––––––––––––––––––––– */
-.boks_med_text-1 h3{
-  text-align: center;
-  color: white;
-  font-size: 30px;
-}
-.boks_med_text-2 {
-  background-color:#ded7c9;
-  text-align: center;
-  color:#a69278;
-  height: 100px;
-  padding: 25px;
-}
-.boks_med_text-2  h2 {
-color: white;
 }
 /* –––––––––––––––––––––––––––––––––––––––Knapper––––––––––––––––––––––––––––––––––––––– */
 
@@ -184,7 +170,7 @@ color: white;
   color: white;
   font-size: 24px;
   font-family: "Oswald";
-  background-color: #78a99b;
+  background-color: var(--brun);
   padding: 14px 70px;
   border-radius: 50px;
   margin: 40px 40px 0 40px;
@@ -194,37 +180,6 @@ color: white;
   top: 75%;
   right: 10%; */
 }
-
-.tyrkis_knap2{
-  text-decoration: none;
-  display: inline-block;
-  color: white;
-  font-size: 24px;
-  font-family: "Oswald";
-  background-color: #78a99b;
-  padding: 14px 70px;
-  border-radius: 50px;
-  margin: 40px 40px 0 40px;
-  /* laver sknapperne 3D med en skygge */
-  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
-  /* position: absolute;
-  top: 125%;
-  right: 10%; */
-}
-
-/* –––––––––––––––––––––––––––––––––––––––Annimation af pil––––––––––––––––––––––––––––––––––––––– */
-@keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-50px); }
-  }
-  
-  img.mover {
-    transform-origin: 50% 50%;
-    animation: mover 1s infinite  alternate;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-  }
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––––––––– Footer –––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
   background-color: var(--lysbrun);
