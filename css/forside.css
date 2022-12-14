@@ -320,10 +320,10 @@ img.mover {
   color: white;
   font-size: 24px;
   font-family: "Oswald";
-  background-color: var(--brun);
+  background-color: var(--tyrkis);
   padding: 14px 50px;
   border-radius: 50px;
-  box-shadow: 0 4px 8px 0 rgba(166, 146, 120, 0.3), 0 6px 20px 0 rgba(166, 146, 120, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(131, 169, 157, 0.3), 0 6px 20px 0 rgba(131, 169, 157, 0.3);
 }
 .kurv_knap {
   text-decoration: none;
