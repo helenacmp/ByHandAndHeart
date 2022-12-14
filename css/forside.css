@@ -252,7 +252,7 @@ img.mover {
 /* ––––––––––––––––––––– section 2 ––––––––––––––––––––– */
 #section2 {
   background-color: var(--lysbrun);
-  background-image: url("../billeder/blå.JPG");
+  background-image: url("../billeder/blå.JPG");
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
