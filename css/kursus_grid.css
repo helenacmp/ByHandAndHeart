@@ -19,58 +19,21 @@ img {
 /* --------------Video og tekst--------------------------- */
 .grid_video {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    background-color: var(--lysbrun)
-    
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--lysbrun);
+    margin: 5px;
+    padding: 10px;
 }
-#video_container {
-    width: 100%;
+.grid_video h2 {
     display: grid;
     grid-column: 1;
-    grid-row: 1;
+    font-family: "Oswald";
+    color: black;
+    font-size: 40px;
+    text-align: center;
 }
-
-#video_file {
-    object-fit: cover;
-    max-width: 100%; 
-    display: grid;
-    grid-column: 1;
-    grid-row: 1;
-}
-#bag_container {
-    grid-column: 2;
-    grid-row: 1;
-}
-
-.flex-container {
-display: flex;
-flex-direction:row;
-flex-wrap: wrap;
-justify-content: space-between;
-align-items:baseline;
-gap: 10px;
-height: fit-content;
-}
-
-#volume_container {
-    width: 10%;
-    flex-grow: 1;
-    flex-shrink: 1;
-}
-
-#play {
-    background-repeat: no-repeat;
-    background-image: url(../components/play.svg);
-    display: inline-block;
-    padding: 14px 0;
-    width: 70px;
-
-}
-#stop {
-    background-repeat: no-repeat;
-    background-image: url(../components/stop.svg);
-    display: inline-block;
-    padding: 14px 0;
-    width: 70px;
+#video_yt {
+display: block;
+grid-column: 2;
+overflow: hidden;
 }
