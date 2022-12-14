@@ -53,7 +53,7 @@ p {
 
 /* –––––––––––––––––––banner container––––––––––––––––––– */
 .wrapper {
-  background: url(../billeder/blandet_vaser.JPG) no-repeat;
+  background: url(../billeder/tætler.JPG) no-repeat;
   background-size: cover;
   height: 80vh;
 }
@@ -96,6 +96,64 @@ body {
 .boks_med_text-2 h2 {
   color: white;
 }
+/* ––––––––––––––––––––––––––––––––––––––– Grid ––––––––––––––––––––––––––––––––––––––– */
+#kursus_boks {
+  background-color: var(--lystyrkis);
+  padding: 40px;
+  display: grid;
+  grid-row: 1fr 1fr;
+  gap: 40px;
+}
+
+.tilmelding {
+  margin-top: 20px;
+}
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 5px;
+}
+.grid_1-2 h2 {
+  color: #a69278;
+}
+
+.grid_1-2 img {
+  max-width: 100%;
+  display: block;
+}
+.tekst {
+  padding: 10px;
+}
+/* --------------Video og tekst--------------------------- */
+.grid_video {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 100px 1fr;
+  background-color: white;
+  justify-content: center;
+  align-content: center;
+  padding: 40px 0 0 0;
+}
+.grid_video h2 {
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  font-family: "Oswald";
+  color: #a69278;
+  font-size: 40px;
+  justify-content: center;
+}
+#video_yt {
+  display: block;
+  grid-column: 1;
+  grid-row: 2;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0 0 40px 0;
+  /* overflow: hidden; */
+}
+
 /* –––––––––––––––––––––––––––––––––––––––Knapper––––––––––––––––––––––––––––––––––––––– */
 
 .tyrkis_knap {
