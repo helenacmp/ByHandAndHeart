@@ -91,3 +91,21 @@ img {
 .i_ovnen {
   background-color: #c8ddd7;
 }
+
+.grid1-2 {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.grid1-2 img {
+  grid-column: 2;
+}
+
+.grid2-1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.grid2-1 img {
+  grid-column: 1;
+}
