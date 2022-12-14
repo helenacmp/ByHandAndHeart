@@ -67,6 +67,23 @@ nav .logo {
   width: 150px;
   padding: 10px;
 }
+/* links i dropdown menu */
+.dropdown-item {
+  list-style: none;
+  display: inline-block;
+  display: flex;
+  position: relative;
+}
+/* styling af tekst i dropdown menu */
+.dropdown-link {
+  text-decoration: none;
+  color: #a69278;
+  font-size: 20px;
+  font-family: "OpenSans";
+  margin: 10px;
+
+  transition: all 0.3s;
+}
 
 /* ––––––––––––––––––– Burger menu ––––––––––––––––––– */
 .hamburger {
