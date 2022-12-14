@@ -103,7 +103,6 @@ body {
 }
 .img_1 {
   background-image: url("../billeder/typer/wallpots.JPG");
-
   background-repeat: no-repeat;
   max-width: 100%;
   height: 100%;
@@ -240,3 +239,15 @@ body {
   overflow: hidden;
   display: block;
 } */
+
+.overskrifter_på_billeder {
+  color:#ded7c9;
+  padding: 4px;
+}
+
+.grid_3-2 a:hover,
+a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+}
