@@ -143,7 +143,7 @@ body {
   font-size: 40px;
   justify-content: center;
 }
-#video_yt {
+#youtube-video_container {
   display: block;
   grid-column: 1;
   grid-row: 2;
@@ -151,9 +151,11 @@ body {
   display: flex;
   justify-content: center;
   padding: 0 0 40px 0;
-  width: 1400px;
-  height:700px;
-  /* overflow: hidden; */
+}
+
+.youtube-video {
+  width: 1200px;
+  height: 700px;
 }
 /* –––––––––––––––––––––––––––––––––––––––Knapper––––––––––––––––––––––––––––––––––––––– */
 
