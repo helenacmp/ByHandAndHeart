@@ -31,23 +31,23 @@ h1 {
 
 h2 {
   font-family: "Oswald";
-  color: black;
+  color: var(--tyrkis);
   font-size: 40px;
 }
 h3 {
   font-family: "Oswald";
-  color: rgb(0, 0, 0);
+  color: var(--tyrkis);
   font-size: 20px;
 }
 h4 {
   font-family: "OpenSans";
-  color: black;
+  color: var(--tyrkis);
   font-size: 16px;
   font-weight: lighter;
 }
 p {
   font-family: "OpenSans";
-  color: black;
+  color: var(--tyrkis);
   font-size: 16px;
 }
 /* –––––––––––––––––––banner container––––––––––––––––––– */
@@ -71,12 +71,52 @@ p {
   text-align: center;
 }
 /* –––––––––––––––––––––––––––––––––––––––Body design––––––––––––––––––––––––––––––––––––––– */
-body {
-  background-color: rgb(255, 255, 255);
-  max-width: 100vw;
-  margin: 0;
-  padding: 0px;
+.grid_1-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  background-color: white;
 }
+
+.grid_1-2 img {
+  max-width: 100%;
+  display: block;
+}
+
+.tekst {
+  padding: 20px;
+  text-align: start;
+}
+.minibilleder {
+  height: 200px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  margin-left: 45px;
+}
+
+.minibillede1 {
+  width: 200px;
+  height: 100%;
+  display: block;
+  grid-column: 1;
+  background-image: url("../billeder/produkter/SSV_004_3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.minibillede2 {
+  width: 200px;
+  height: 100%;
+  display: block;
+  grid-column: 2;
+  background-image: url("../billeder/produkter/SSV_004_4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
 /* –––––––––––––––––––––––––––––––––––––––Knapper––––––––––––––––––––––––––––––––––––––– */
 
 .tyrkis_knap {
