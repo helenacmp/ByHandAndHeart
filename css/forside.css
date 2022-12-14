@@ -183,12 +183,12 @@ img.mover {
 /* styling: overskrift */
 .content h1 {
   font-size: 100px;
-  color: white;
+  color: var(--tyrkis);
   transition: 0.5s;
   font-family: "Aclonica";
 }
 .content h1:hover {
-  -webkit-text-stroke: 0.2px white;
+  -webkit-text-stroke: 0.2px var(--tyrkis);
   color: transparent;
 }
 /* styling: link til keramik og kurser */
@@ -198,7 +198,7 @@ img.mover {
   color: white;
   font-size: 24px;
   font-family: "Oswald";
-  background-color: var(--lysbrun);
+  background-color: var(--lystyrkis);
   padding: 14px 0;
   width: 200px;
   border-radius: 50px;
