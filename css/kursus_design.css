@@ -237,37 +237,46 @@ footer {
   padding: 30px;
   overflow: hidden;
 }
+
 footer h3 {
   color: var(--brun);
 }
+
 .footer_kategorier li {
   list-style: none;
 }
+
 .footer_kategorier a {
   text-decoration: none;
   color: var(--brun);
   font-family: "OpenSans";
 }
+
 .SoMe-illustrationer a {
   text-decoration: none;
 }
+
 .SoMe-illustrationer img {
   max-width: 40px;
 }
+
 .footer_billede {
   grid-area: 1/ 4/ 1/ 5;
   width: 100px;
   height: auto;
   justify-self: center;
 }
+
 .footer_BHH {
   grid-area: 1/ 5/ 1/ 7;
 }
+
 .footer_BHH p {
   color: var(--brun);
 }
 
 /* –––––––––––––––––––––––––––––––––––––––––––––––––––––––– Responsiv ––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 @media (max-width: 768px) {
   .hamburger {
     display: block;
