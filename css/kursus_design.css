@@ -137,20 +137,24 @@ p {
   }
 /* –––––––––––––––––––banner container––––––––––––––––––– */
 .wrapper {
-    height: 80vh;
-    background-image: url("../billeder/farveprøver.JPG");
-    background-size: cover; 
-  }
+  background: url(../billeder/blandet_vaser.JPG) no-repeat;
+  background-size: cover;
+  height: 80vh;
+}
+
 .wrapper .center {
-  text-align: justify;
-  /* transform: translate(-50%, -50%); */
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   user-select: none;
 }
+
 .center h1 {
   color: white;
   font-size: 70px;
   font-weight: bold;
-  width: 100%;
+  width: 900px;
   text-align: center;
 }
 /* –––––––––––––––––––––––––––––––––––––––Body design––––––––––––––––––––––––––––––––––––––– */
